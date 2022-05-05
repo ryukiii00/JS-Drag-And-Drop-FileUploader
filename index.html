@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="/dragNdrop(mio)/style.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+    <form method="post">
+        <div class="container-fluid p-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-auto text-center">
+                    <div class="drop-zone">
+                        <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                        <input type="file" name="myFile" multiple class="drop-zone__input" id="input">
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-3 text-center">
+                    <span id="sub"></span>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="row d-flex justify-content-center mt-3">
+        <div class="col-auto text-center">
+            <span id="headerList"></span>
+
+            <div class="card-group" id="fileList">
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="/dragNdrop(mio)/scripts.js"></script>
+</body>
+
+</html>
